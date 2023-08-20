@@ -9,22 +9,9 @@
     <!-- Tailwind Link -->
  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
  <script src="https://cdn.tailwindcss.com"></script>
-   
-  <!-- google font -->
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Work+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-
-     <style>
-        .font-workSens{
-         font-family: font-workSens;
-
-        }
-     </style>
 
 </head>
-<body class="font-worksens">
+<body class=" bg-[#F8F8F8]">
 
 
              <!-- banner section Start  -->
@@ -53,6 +40,9 @@
            <main class="">
 
 
+
+
+
               <!------ Kitchenware text start -------->
 
   
@@ -64,29 +54,25 @@
 
 
 
-
-
-
-
-
-
          
                <!----- card-sections start ------->
 
 
 
-                <!-- card container and coupon  -->
+                <!-- card container and coupon side  -->
 
-        
         <div class=" cursor-pointer
         mb-20 mx-auto w-11/12 flex flex-col lg:flex-row ">
+        
 
-            <!-- 3 card container -->
+            <!-- kitchen 3 card container -->
         <div class=" mx-auto flex-1 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-5 ">
+        
                     
-      <div class=" card w-64 h-72 rounded-md  bg-red-500 ">
+           <!-- kitchen  card 1 start -------->
+      <div onclick="itemClick(this)" class="  card w-64 h-72 rounded-md shadow-xl bg-gray-100 ">
       <figure class="px-10 pt-10">
-        <img src="./images/prod1.png" alt="Shoes" class="  px-14 pt-4 pb-10   bg-white " />
+        <img src="./images/prod1.png" alt="Shoes" class=" px-14 pt-4 pb-10   bg-slate-300 " />
       </figure>
           
       <div class="card-body items-center ">
@@ -97,18 +83,23 @@
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
             </div>
-          <h2 class=" text-[#111] text-sm font-bold ">K. Accessories</h2>
-          <p class="">39.00 TK</p>
+          <h2  class=" text-[#111] text-sm font-bold ">K.Accessories</h2>
+          <p  > 39.00 TK</p>
         <div class="card-actions">
                 
               </div>
             </div>
           </div>
-                <!-- card 1 end --> 
+              
+
+                 <!-- kitchen  card 1 end --------> 
+
+
+                 <!-- kitchen  card 2 start-------->
 
                 <div class=" card w-64 h-72 rounded-md shadow-xl bg-gray-100 ">
                   <figure class="px-10 pt-10">
-                    <img src="./images/prod2.png" alt="Shoes" class=" px-14 pt-4 pb-10   bg-slate-400 " />
+                    <img src="./images/prod2.png" alt="Shoes" class=" px-14 pt-4 pb-10  bg-slate-300 " />
                   </figure>
                      
                   <div class="card-body items-center ">
@@ -128,11 +119,14 @@
                 </div>
 
 
-                <!--  card 2 end -------->
+                <!-- kitchen  card 2 end -------->
 
-                <div class=" card w-64 h-72 rounded-md  bg-red-500 ">
+
+                 <!-- kitchen 3 card start -------->
+
+                <div class=" card w-64 h-72 rounded-md shadow-xl bg-gray-100 ">
                   <figure class="px-10 pt-10">
-                    <img src="./images/prod3.png" alt="Shoes" class=" px-14 pt-4 pb-10   bg-white " />
+                    <img src="./images/prod3.png" alt="Shoes" class=" px-14 pt-4 pb-10  bg-slate-300 " />
                   </figure>
                      
                   <div class="card-body items-center ">
@@ -154,63 +148,60 @@
 
                 </div>
 
-                <!-- card section end -->
+                <!-- kitchen card section end -->
 
 
 
                 <!-- coupon Area -->
 
 
-                <div class=" bg-cyan-400 rounded-sm px-2 ml-10 mt-10  h-[100px] w-[190px]">
-                    <div class=" text-sm font-bold"> Have Coupon?
-                      <br>
+                <div class=" bg-[#FFF] rounded-sm px-2 ml-10   h-[100px] w-[190px]">
+                    <div class=" text-sm font-bold pt-2 pb-6"> Have Coupon?
+                      
 
-                  <input class=" w-28 h-8 text-sm  font-bold px-2 mt-2 rounded-sm "  type="email" name="" id=""  placeholder="Coupon Code" >
-                  <button class="bg-[#E527B2] rounded mr- w-12 h-8  text-[#FFF] " >Apply</button>
+                  <input class=" bg-slate-100  w-28 h-8 text-sm font-medium px-2  rounded-sm "  type="email" name="" id=""  placeholder="Coupon Code" >
+                  <button class="bg-[#E527B2] rounded  w-14 h-8  text-[#FFF]">Apply</button>
                      
                     </div>
 
-                    <div class= "bg-slate-300 mt-12 h-[180px] w-[190px]" >
+                    <div class= "bg-[#FFF] rounded  mt-12 space-y-4 h-[200px] w-[190px]" >
 
-                 <div class="">
+                 <div class=" px-4">
 
-                  <h4>1.</h4>
-                  <h4>2.</h4>
-                  <h4>3.</h4>
+                  <h4 class=" px-1 font-medium ">1.</h4>
+                  <h4 class=" font-medium ">2.</h4>
+                  <h4 class=" font-medium ">3.</h4>
                   <hr>
 
                  </div>
 
-                 <div class="">
+                 <div id="selectItem" class=" px">
 
-                  <h5 class="">Total Price:</h5>
-                  <h5> Discount:</h5>
-                  <h5> Total:</h5>
+                  <h5 class="  font-medium ">Total Price:</h5>
+                  <h5 class=" font-medium "> Discount:</h5>
+                  <h5 class="  font-medium "> Total:</h5>
+
                   <hr>
                  
                  </div>
 
                     </div>
 
-                    <button class="bg-[#E527B2] text- font-medium rounded ml-2  w-40 h-8  text-[#FFF] " >Make Purchase</button>
+   <button class="bg-[#E527B2] py-2 px-6 -mt-6  
+    text-white font-semibold rounded-lg " >Make Purchase</button>
 
                      </div>
-                     
-
+                    
             </div>
 
 
-            <!---------> 
-
             <!-- Sportswear start -->
 
-            <div class="mt-10 mx-auto mb-5 w-11/12">
+            <div class="  mx-auto mb-5 w-11/12">
               <p class=" font-bold text-xl">Sportswear</p>
           </div>
 
                      <!-- Sportswear end -->
-
-
 
 
          <!-- Sportswear card container -->
@@ -218,10 +209,12 @@
 
           <!-- 3 card container -->
       <div class=" mx-auto flex-1 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-5 ">
+
+         <!-- Sports Card 1 -->
                   
-    <div class=" card w-64 h-72 rounded-md  bg-red-500 ">
+    <div class=" card w-64 h-72 rounded-md shadow-xl bg-gray-100 ">
     <figure class="px-10 pt-10">
-      <img src="./images/prod4.png" alt="Shoes" class="  px-14 pt-4 pb-10   bg-white " />
+      <img src="./images/prod4.png" alt="Shoes" class="  px-14 pt-4 pb-10  bg-slate-300 " />
     </figure>
         
     <div class="card-body items-center ">
@@ -239,11 +232,14 @@
             </div>
           </div>
         </div>
-              <!-- card 1 end --> 
+              <!-- sports card 1 end --> 
 
-              <div class=" card w-64 h-72 rounded-md  bg-red-500 ">
+
+               <!-- Sports Card 2  -->
+
+              <div class=" card w-64 h-72 rounded-md shadow-xl bg-gray-100 ">
                 <figure class="px-10 pt-10">
-                  <img src="./images/prod5.png" alt="Shoes" class=" px-14 pt-4 pb-10   bg-white " />
+                  <img src="./images/prod5.png" alt="Shoes" class=" px-14 pt-4 pb-10  bg-slate-300 " />
                 </figure>
                    
                 <div class="card-body items-center ">
@@ -254,7 +250,7 @@
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
                       </div>
-                   <h2 class=" text-[#111] text-sm font-bold ">K. Accessories</h2>
+                   <h2 class=" text-[#111] text-sm font-bold ">Full Jersey Set</h2>
                    <p class="">69.00 TK</p>
                   <div class="card-actions">
                     
@@ -263,11 +259,13 @@
               </div>
 
 
-              <!--  card 2 end --------> 
+              <!-- Sports card 2 end --------> 
 
-              <div class=" card w-64 h-72 rounded-md  bg-red-500 ">
+
+             <!-- Sports Card 3  -->
+              <div class=" card w-64 h-72 rounded-md shadow-xl bg-gray-100 ">
                 <figure class="px-10 pt-10">
-                  <img src="./images/prod6.png" alt="Shoes" class=" px-14 pt-4 pb-10   bg-white " />
+                  <img src="./images/prod6.png" alt="Shoes" class=" px-14 pt-4 pb-10  bg-slate-300 " />
                 </figure>
                    
                 <div class="card-body items-center ">
@@ -286,8 +284,7 @@
                 </div>
               </div>
 
-            
-
+    
               </div>
 
               <!-- coupon Area -->
@@ -295,10 +292,6 @@
               <div class=" rounded-sm px-2 ml-10 mt-10  h-[100px] w-[180px]">
                   <div>
                   
-
-               
-
-
 
           </div>
 
@@ -308,7 +301,7 @@
 
            </main>
 
-           <script src="js/cart.js"></script>
+           <script src="js/index.js"></script>
 
           
     
